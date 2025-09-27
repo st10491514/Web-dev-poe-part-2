@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+  .content { grid-template-columns: 1fr; }
+  header { flex-direction: column; }
+}
+
+@media (max-width: 480px) {
+  body { font-size: 14px; }
+  nav ul { flex-direction: column; }
+}
+p { font-size: 1rem; margin-bottom: 1.5rem; }
+.container { width: 90%; max-width: 1200px; margin: 0 auto; }
+<img src="img-small.jpg" 
+     srcset="img-small.jpg 480w, img-medium.jpg 768w, img-large.jpg 1200w"
+     sizes="(max-width: 480px) 100vw,
+            (max-width: 768px) 75vw,
+            1200px"
+     alt="Description">
